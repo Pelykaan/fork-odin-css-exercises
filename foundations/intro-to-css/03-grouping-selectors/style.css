@@ -1,1 +1,15 @@
-/* Add CSS Styling */
+/* - **The first element**: a black background and white text
+- **The second element**: a yellow background
+- **Both elements**: a font size of 28px and a list of fonts containing `Helvetica` and `Times New Roman`, with `sans-serif` as a fallbackAdd CSS Styling */
+
+.btnLeft{
+    background-color: black;
+    color: white;
+}
+.btnRight{
+    background-color: yellow;
+}
+.btnLeft, .btnRight{
+    font-size: 28px;
+    font-family: 'Helvetica', 'Times New Roman', 'sans-serif';
+}
