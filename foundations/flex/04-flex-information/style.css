@@ -1,16 +1,39 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  max-height: auto;
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin: 32px;
+
+  /* TEXT-ALIGN ZORGT ER AL VOOR DAT DE TEKST WORDT GECENTREERD */
+
+  /* display: flex;
+  justify-content: center; */
 }
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  gap: 54px;
+}
+
+.itemContainer {
+ /* BINNEN DE CONTAINER ZIJN DE ITEMS BLOCKS EN STAAN DUS ONDER ELKAAR; DISPLAY FLEX IS DAN NIET MEER NODIG */
+ 
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+   max-width: 200px;
+}
+
 
 /* do not edit this footer */
 .footer {
@@ -24,3 +47,5 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+
