@@ -5,7 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
-}
+
+  display: flex;
+  flex-direction: column;
+ }
 
 img {
   width: 600px;
@@ -23,4 +26,46 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+
+/* SOLUTION */
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+.header, .footer{
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+.content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+
+/* FILLS UP ALL AVAILABLE SPACE */
+flex:1;
+}
+
+/* PADDING ON THE BUTTON NOT THE BUTTONS CLASS, PADDING ON THE BUTTONS CLASS ADD PADDING ON THE DIV AND NOT THE PHYSICAL BUTTONS */
+button {
+  padding: 8px;
+}
+
+.footer {
+  background: #eee;
 }
